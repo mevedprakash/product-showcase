@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/l3j2cnk0/t-shirt/2/w/p/l-723-2-5-7-8-ftx-original-imagemgrpafdug8v.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men Pure Cotton T-Shirt"
+    },
+    {
+      "id": 2,
+      "brand": "Roadster",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/c/8/x/xl-jawan-one-nb-nicky-boy-original-imagwbavcwbtznv5.jpeg?q=70",
+      "currentPrice": "Rs. 300",
+      "standardPrice": "Rs. 600",
+      "discount": "50%",
+      "name": "Men Printed Round Neck Pure Cotton Grey T-Shirt"
+    },
+    {
+      "id": 3,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/q/i/4/m-men-s-cotton-blend-stylist-slim-fit-collar-neck-polo-t-shirt-original-imag6efumx32nuad-bb.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men Pure Cotton T-Shirt"
+    },
+    {
+      "id": 4,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/g/k/b/s-ts12-vebnor-original-imagpnbhkeabf3ap.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men Pure Cotton T-Shirt"
+    },
+    {
+      "id": 5,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/s/1/q/34-ljrmg005-lzard-original-imagteww2sghnje9.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men skye blue Jeans"
+    },
+    {
+      "id": 6,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/e/o/30-g2-mj-gr-103-comfits-original-imagrquh8vqz9znc.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men Pure Cotton T-Shirt"
+    },
+    {
+      "id": 7,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/7/j/d/s-ss-p-001-a-koshin-original-imagny49jaysrqym.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men Pure Cotton T-Shirt"
+    },
+    {
+      "id": 8,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/d/i/m/l-jokpwc-636b-4088golden-jompers-original-imagw7fe4h5ykwhq.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men Pure Cotton T-Shirt"
+    },
+    {
+      "id": 9,
+      "brand": "Here&Now",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/cargo/r/x/r/m-olive-cargo-01-sprouted-original-imagsguqxveedtnd.jpeg?q=70",
+      "currentPrice": "Rs. 150",
+      "standardPrice": "Rs. 300",
+      "discount": "50%",
+      "name": "Men Pure Cotton T-Shirt"
+    }
+  ]
+}
