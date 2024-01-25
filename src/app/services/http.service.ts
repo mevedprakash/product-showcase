@@ -13,4 +13,7 @@ export class HttpService {
   getProducts(){
     return this.http.get<Product[]>("http://localhost:3000/products");
   }
+  getProduct(id:number){
+    return this.http.get<Product>("http://localhost:3000/products/"+id);
+  }
 }

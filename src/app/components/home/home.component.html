@@ -2,14 +2,16 @@
   <h1>Product list</h1>
   <div class="w-full">
     <mat-form-field class="w-full" appearance="outline">
-      <input matInput type="text" placeholder="search product" />
+      <input matInput type="text" placeholder="search product" [formControl]="searchControl" />
     </mat-form-field>
   </div>
   <div class="w-full flex flex-wrap">
-    @for (item of products; track $index) {
+    @for (item of filteredProducts; track $index) {
     <div class="w-3/12 px-3 mb-6">
-      <app-product-card></app-product-card>
+      <app-product-card [product]="item"></app-product-card>
     </div>
+    }@empty{
+       <h4 class="text-red-400">No Product found</h4>
     }
   </div>
 </div>

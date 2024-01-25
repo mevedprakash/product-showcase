@@ -1,0 +1,33 @@
+@if(product){
+<mat-card class="mx-16 mt-4">
+  <div class="flex w-full flex-wrap">
+    <div class="w-6/12 flex flex-col item-center p-8 gap-4">
+      <img [src]="product.image" alt="" />
+      <div class="flex justify-center">
+        <button mat-flat-button class="w-9/12 !bg-yellow-600 !text-white">
+          BUY
+        </button>
+      </div>
+    </div>
+    <div class="w-6/12 p-8">
+      <h2 class="font-semibold !m-0">{{ product.brand }}</h2>
+      <h4 class="!m-0">{{ product.name }}</h4>
+      <p class="text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        tempora quidem est animi nisi, nobis, at, ratione tempore accusamus
+        saepe magni. Facere officiis maiores voluptate ut voluptates quaerat
+        fuga ab?
+      </p>
+      <div class="flex items-center px-4 py-3 gap-3">
+        <span class="text-green-500">{{ product.currentPrice }}</span>
+        <span class="text-gray-500"
+          ><s>{{ product.standardPrice }}</s></span
+        >
+        <span class="text-orange-500">({{ product.discount }} OFF)</span>
+      </div>
+    </div>
+  </div>
+</mat-card>
+}@else {
+<h4>Loading......</h4>
+}
