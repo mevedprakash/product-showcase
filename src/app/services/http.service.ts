@@ -7,13 +7,15 @@ import Product from '../type/product';
 })
 export class HttpService {
   http = inject(HttpClient);
-  constructor() {
-  }
+  constructor() {}
 
-  getProducts(){
-    return this.http.get<Product[]>("http://localhost:3000/products");
+  getProducts() {
+    return this.http.get<Product[]>('http://localhost:3000/products');
   }
-  getProduct(id:number){
-    return this.http.get<Product>("http://localhost:3000/products/"+id);
+  getProduct(id: number) {
+    return this.http.get<Product>('http://localhost:3000/products/' + id);
+  }
+  addProduct(product: Product) {
+    return this.http.post<Product>('http://localhost:3000/products/', product);
   }
 }

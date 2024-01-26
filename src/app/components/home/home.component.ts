@@ -5,6 +5,8 @@ import { ProductCardComponent } from '../product-card/product-card.component';
 import { HttpService } from '../../services/http.service';
 import Product from '../../type/product';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +16,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     ProductCardComponent,
     ReactiveFormsModule,
+    MatButtonModule,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

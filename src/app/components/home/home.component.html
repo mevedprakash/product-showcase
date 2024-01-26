@@ -1,8 +1,16 @@
 <div class="px-16" style="width: 1400px">
-  <h1>Product list</h1>
+  <div class="flex justify-between">
+    <h1>Product list</h1>
+  <button mat-raised-button color="primary" routerLink="/add-product" >Add Product</button>
+  </div>
   <div class="w-full">
     <mat-form-field class="w-full" appearance="outline">
-      <input matInput type="text" placeholder="search product" [formControl]="searchControl" />
+      <input
+        matInput
+        type="text"
+        placeholder="search product"
+        [formControl]="searchControl"
+      />
     </mat-form-field>
   </div>
   <div class="w-full flex flex-wrap">
@@ -11,7 +19,7 @@
       <app-product-card [product]="item"></app-product-card>
     </div>
     }@empty{
-       <h4 class="text-red-400">No Product found</h4>
+    <h4 class="text-red-400">No Product found</h4>
     }
   </div>
 </div>
