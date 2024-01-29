@@ -10,13 +10,13 @@
       "name": "Men Pure Cotton T-Shirt"
     },
     {
-      "id": "2",
       "brand": "Roadster",
       "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/c/8/x/xl-jawan-one-nb-nicky-boy-original-imagwbavcwbtznv5.jpeg?q=70",
-      "currentPrice": "Rs. 300",
+      "currentPrice": "Rs. 400",
       "standardPrice": "Rs. 600",
-      "discount": "50%",
-      "name": "Men Printed Round Neck Pure Cotton Grey T-Shirt"
+      "discount": "40%",
+      "name": "Men Printed Round Neck Pure Cotton Grey T-Shirt",
+      "id": "2"
     },
     {
       "id": "3",
@@ -44,15 +44,6 @@
       "standardPrice": "Rs. 300",
       "discount": "50%",
       "name": "Men skye blue Jeans"
-    },
-    {
-      "id": "6",
-      "brand": "Here&Now",
-      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/e/o/30-g2-mj-gr-103-comfits-original-imagrquh8vqz9znc.jpeg?q=70",
-      "currentPrice": "Rs. 150",
-      "standardPrice": "Rs. 300",
-      "discount": "50%",
-      "name": "Men Pure Cotton T-Shirt"
     },
     {
       "id": "7",

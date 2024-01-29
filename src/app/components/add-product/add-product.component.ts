@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { HttpService } from '../../services/http.service';
 import Product from '../../type/product';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-product',
@@ -25,6 +25,18 @@ export class AddProductComponent {
   });
   httpService = inject(HttpService);
   router = inject(Router);
+  route = inject(ActivatedRoute);
+  isEdit = false;
+  productId!: number;
+  ngOnInit() {
+    this.productId = this.route.snapshot.params['id'];
+    if (this.productId) {
+      this.isEdit = true;
+      this.httpService.getProduct(this.productId).subscribe((result) => {
+        this.productForm.patchValue(result);
+      });
+    }
+  }
   submit() {
     let formValues = this.productForm.value as Product;
     console.log(formValues);
@@ -36,6 +48,17 @@ export class AddProductComponent {
     this.httpService.addProduct(formValues).subscribe(() => {
       alert('product added');
       this.router.navigateByUrl('/');
+    });
+  }
+  update() {
+    let formValues = this.productForm.value as Product;
+    if (this.productForm.invalid) {
+      alert('Please prodvide required filed');
+      return;
+    }
+    this.httpService.updateProduct(this.productId, formValues).subscribe(() => {
+      alert('product updated');
+      this.router.navigateByUrl('/product-detail/' + this.productId);
     });
   }
 }

@@ -18,4 +18,15 @@ export class HttpService {
   addProduct(product: Product) {
     return this.http.post<Product>('http://localhost:3000/products/', product);
   }
+  updateProduct(productId: number, product: Product) {
+    return this.http.put<Product>(
+      'http://localhost:3000/products/' + productId,
+      product
+    );
+  }
+  deleteProduct(productId: number) {
+    return this.http.delete<Product>(
+      'http://localhost:3000/products/' + productId
+    );
+  }
 }

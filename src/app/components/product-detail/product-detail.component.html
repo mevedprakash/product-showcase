@@ -10,7 +10,13 @@
       </div>
     </div>
     <div class="w-6/12 p-8">
-      <h2 class="font-semibold !m-0">{{ product.brand }}</h2>
+      <div class="flex justify-between">
+        <h2 class="font-semibold !m-0">{{ product.brand }}</h2>
+        <div class="flex gap-4">
+          <button mat-flat-button color="primary" (click)="edit()">Edit</button>
+          <button mat-flat-button color="warn" (click)="delete()">Delete</button>
+        </div>
+      </div>
       <h4 class="!m-0">{{ product.name }}</h4>
       <p class="text-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
