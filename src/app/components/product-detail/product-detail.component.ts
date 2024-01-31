@@ -5,6 +5,7 @@ import Product from '../../type/product';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -18,6 +19,7 @@ export class ProductDetailComponent {
   httpService = inject(HttpService);
   router = inject(Router);
   product!: Product;
+  cartService = inject(CartService);
   ngOnInit() {
     let productId = this.route.snapshot.params['id'];
     console.log(productId);
@@ -33,5 +35,10 @@ export class ProductDetailComponent {
       alert('product deleted');
       this.router.navigateByUrl('/');
     });
+  }
+  addToCart() {
+    this.product.quantity=1;
+    this.cartService.increseQuantity(this.product);
+    this.router.navigateByUrl('/cart');
   }
 }

@@ -3,9 +3,12 @@
   <div class="flex w-full flex-wrap">
     <div class="w-6/12 flex flex-col item-center p-8 gap-4">
       <img [src]="product.image" alt="" />
-      <div class="flex justify-center">
-        <button mat-flat-button class="w-9/12 !bg-yellow-600 !text-white">
+      <div class="flex justify-center gap-2">
+        <button mat-flat-button class="w-4/12 !bg-yellow-600 !text-white">
           BUY
+        </button>
+        <button mat-flat-button class="w-4/12 !bg-purple-600 !text-white" (click)="addToCart()">
+          Add To Cart
         </button>
       </div>
     </div>

@@ -1,9 +1,12 @@
 <header>
   <mat-toolbar color="primary">
-    <button mat-icon-button routerLink="/">
-      <mat-icon>menu</mat-icon>
-      <span>FilpMyntra</span>
-    </button>
+    <div class="flex justify-between px-8 w-full">
+      <button mat-icon-button routerLink="/">
+        <mat-icon>menu</mat-icon>
+        <span>FilpMyntra</span>
+      </button>
+      <button routerLink="/cart" [matBadge]="itemCount" matBadgePosition="after" matBadgeColor="accent"><mat-icon>shopping_cart</mat-icon></button>
+    </div>
   </mat-toolbar>
 </header>
 <main class="relative w-full flex justify-center p-4">

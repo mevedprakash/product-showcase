@@ -6,4 +6,6 @@ export default interface Product {
   standardPrice: string;
   discount: string;
   name: string;
+
+  quantity?:number;
 }
