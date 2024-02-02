@@ -28,4 +28,22 @@ export class CartComponent {
   removeProduct(product: Product) {
     this.cartService.removerProduct(product);
   }
+
+  get totalPrice(){
+    let sum=0;
+    for(let product of this.cartItems){
+      sum+= (+product.standardPrice)*(+product.quantity!);
+    }
+    return sum;
+  }
+  get totalDiscount(){
+    return this.totalPrice-this.totalAmount;
+  }
+  get totalAmount(){
+    let sum=0;
+    for(let product of this.cartItems){
+      sum+= (+product.currentPrice)*(+product.quantity!);
+    }
+    return sum;
+  }
 }
