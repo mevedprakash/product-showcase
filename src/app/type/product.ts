@@ -9,3 +9,8 @@ export default interface Product {
 
   quantity?:number;
 }
+
+export  interface Order{
+  orderDate:Date,
+  items:Product[]
+}

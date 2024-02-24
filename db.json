@@ -91,5 +91,33 @@
       "name": "Men Solid Bomber Jacket"
     }
   ],
-  "cartItems": []
+  "cartItems": [],
+  "orders": [
+    {
+      "id": "d1ad",
+      "orderDate": "2024-02-24T14:50:28.884Z",
+      "items": [
+        {
+          "id": "1",
+          "brand": "Here&Now",
+          "image": "https://rukminim2.flixcart.com/image/612/612/l3j2cnk0/t-shirt/2/w/p/l-723-2-5-7-8-ftx-original-imagemgrpafdug8v.jpeg?q=70",
+          "currentPrice": "150",
+          "standardPrice": "300",
+          "discount": "50",
+          "name": "Men Pure Cotton T-Shirt",
+          "quantity": 1
+        },
+        {
+          "brand": "Roadster",
+          "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/c/8/x/xl-jawan-one-nb-nicky-boy-original-imagwbavcwbtznv5.jpeg?q=70",
+          "currentPrice": "400",
+          "standardPrice": "600",
+          "discount": "40",
+          "name": "Men Printed Round Neck Pure Cotton Grey T-Shirt",
+          "id": "2",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
 }
